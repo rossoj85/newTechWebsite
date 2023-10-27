@@ -1,5 +1,5 @@
 {
-  "name": "NewTech Horizons",
+  "name": "NewTechHorizons",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://rossoj85.github.io/newTechWebsite",
@@ -18,8 +18,8 @@
     "react-scrollable-anchor": "^0.6.1"
   },
   "scripts": {
-    "build-css": "node-sass-chokidar   src/stylesheets/index.scss -o src/",
-    "watch-css": "npm run build-css && node-sass-chokidar src/index.scss -o src/ --watch --recursive",
+    "build-css": "sass src/index.scss src/index.css",
+    "watch-css": "npm run build-css && sass src/index.scss:src/index.css --watch --no-source-map",
     "start-js": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
@@ -28,5 +28,8 @@
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "sass": "^1.69.5"
   }
 }
