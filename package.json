@@ -1,9 +1,11 @@
 {
-  "name": "be-plus",
+  "name": "NewTech Horizons",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://rossoj85.github.io/newTechWebsite",
   "dependencies": {
     "bootstrap": "^3.4.1",
+    "gh-pages": "^6.0.0",
     "node-sass-chokidar": "^1.2.2",
     "npm-run-all": "^4.1.5",
     "react": "^16.14.0",
@@ -19,6 +21,8 @@
     "build-css": "node-sass-chokidar   src/stylesheets/index.scss -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/index.scss -o src/ --watch --recursive",
     "start-js": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "npm-run-all -p watch-css start-js",
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css build-js",
