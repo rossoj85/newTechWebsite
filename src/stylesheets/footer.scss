@@ -1,0 +1,109 @@
+$github-purple: #81047E;
+$linkedin-blue:#0079B3;
+
+#footer{
+    background-image: $greyGradient;
+    color: white;
+    text-align: center
+}
+
+.nav-footer {
+    display: block;
+    opacity: 1;
+    transition: all .6s ease;
+    width: fit-content;
+    margin: 0 auto 0 auto;
+    padding: 0 1em;
+    &:hover .nav-link-footer {
+      opacity: .5;
+      transform: translateY(6px);
+      transition: .6s;
+    }
+    #designedLine{
+      margin-left: 1.5em;
+    }
+    .nav-link-footer {
+      display: inline-block;
+      position: relative;
+      padding: 6px 6px;
+      height: 36px;
+      width: 36px;
+      margin: 0 3px;
+      transition: .6s;
+    }
+    .nav-link-instagram {
+      
+      &:hover {
+        opacity: 1;
+        transform: scale(1.15);
+        background-color: white;
+        border-radius: 50%;
+        transition: .6s;
+        .hover-link {opacity:1}
+        .default-link {opacity: 0;}
+      }
+        .default-link {
+          position: absolute;
+          top: 6px;
+          left: 6px;
+        //   &:hover {opacity: 0;}
+        }
+        .hover-link {
+          opacity: 0;
+          transition: .6s;
+        }
+      }
+    .nav-link-linkedin {
+      
+      &:hover {
+        opacity: 1;
+        transform: scale(1.15);
+        background-color: $linkedin-blue;
+        border-radius: 50%;
+        transition: .6s;
+      }
+        .default-link {
+          position: absolute;
+          top: 6px;
+          left: 6px;
+          opacity: 0;
+        }
+        .hover-link {
+          opacity: 1;
+          transition: .6s;
+        }
+    }
+    .nav-link-mail {
+      
+      &:hover {
+        opacity: 1;
+        transform: scale(1.15);
+        background-color: maroon;
+        border-radius: 50%;
+        transition: .6s;
+      }
+        .default-link {
+          position: absolute;
+          top: 6px;
+          left: 6px;
+          opacity: 0;
+        }
+        .hover-link {
+          opacity: 1;
+          transition: .6s;
+        }
+    }
+    
+}
+.logo{
+  height: 60px;
+  width: 60px;
+}
+.footerLogo{
+  background: white;
+  color: black;
+  display: inline-table;
+  width: 96px;
+  height: 96px;
+  margin: 1% 0%;
+}

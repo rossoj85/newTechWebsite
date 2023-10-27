@@ -1,0 +1,62 @@
+@keyframes opening-overlay {
+  0% {
+    opacity: 1;
+    z-index: 1000;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: 1000;
+  }
+}
+@keyframes logo {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#initial-mount{
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  animation-name: opening-overlay;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+}
+#welcomeJumbo{
+  @include jumboCreater('components/images/docks.jpg');
+  background-attachment: fixed;
+  background-position: top;
+  height: 100vh;
+}
+
+#jumbotronText{
+  @include jumboText(white,absolute);
+  
+}
+
+#carImg{
+@extend %jumboDimensions
+}
+
+.textBox{
+  padding: 7% 10%;
+  text-align: center;
+}
+#columns{
+
+  min-height: 200px
+}
+.centered{
+  text-align: center;
+}

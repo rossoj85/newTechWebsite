@@ -1,0 +1,21 @@
+#ourWorkJumbo{
+    @include jumboCreater('components/images/mill.jpg')
+    
+}
+#ourWorkJumboText{
+    @include jumboText(white,relative)
+}
+
+#ourClients{
+    padding-bottom: 50px;
+   
+}
+.logoLine{
+    padding: 3% 10%;
+}
+.clientLogo{
+    width: 30%;
+    height: auto; 
+    border: 2px grey solid;
+    box-shadow: 5px 10px #80808042;
+}

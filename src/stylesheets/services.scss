@@ -1,0 +1,26 @@
+#servicesJumbo{
+    @include jumboCreater('components/images/garden.jpg')
+    
+}
+#servicesJumboText{
+    @include jumboText(white)
+}
+#serviceDescriptions{
+    text-align: left
+}
+.serviceEntry{
+    padding: 5% 0%
+}
+#digitalServiceCols{
+    text-align: center;
+    display: flex;
+    padding: 4% 0%;
+    .dsCol{
+        background-color: gray;
+        padding: 0px 20px;
+        background-clip: content-box;
+        ul{
+            text-align: left;
+        }
+    }
+}
