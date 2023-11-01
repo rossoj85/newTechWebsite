@@ -42,8 +42,8 @@ export default class Welcome extends Component{
         console.log(this.state)   
         return(
 
-            <ScrollableAnchor id={'splash'}>
-                <div>
+            // <ScrollableAnchor id={'splash'}>
+                <div id="splashScreen">
                     <Splash divClass={this.state.divClass}
                             textClass={this.state.textClass}
                             logoClass={this.state.logoClass}/>
@@ -131,7 +131,7 @@ export default class Welcome extends Component{
 
     
                 </div>
-            </ScrollableAnchor>
+            // </ScrollableAnchor>
         );
     }
 

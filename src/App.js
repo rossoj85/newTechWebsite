@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import './App.css';
 import { Route, Switch, Fade } from 'react-router-dom';
-import {LandingPage, Navbar, Footer, AboutUs, OurWork, Services, Contact, ParallaxTest} from './components'
+import {LandingPage, Navbar, Footer, ParallaxTest} from './components'
 
 class App extends Component {
   constructor(props){
@@ -27,22 +27,30 @@ class App extends Component {
   }
   render() {
    console.log('NEW REFRESH ON APP')
-    const landingPageFunc =(props)=>{
-      return(
-        <LandingPage language={this.state.language}
-        {...props}
-        />
-      )
-    }
+
+
+    // const landingPageFunc =(props)=>{
+    //   return(
+    //     <LandingPage language={this.state.language}
+    //     {...props}
+    //     />
+    //   )
+    // }
 
     //Renderings 
     return (
       <div className="root">
         <Navbar language={this.state.language} changeLanguage={this.changeLanguage}/>
-        <Route exact path='/' render={landingPageFunc} />
-        <Switch>
+
+        <LandingPage language={this.state.language} />
+
+
+        {/* <Route exact path='/' render={landingPageFunc} /> */}
+
+
+        {/* <Switch>
           <Route exact path='/parallax' render={ParallaxTest} />
-        </Switch>
+        </Switch> */}
         {/*<div id='innerBody'>
         <Switch>
         <Route exact path='/' render={landingPageFunc} />

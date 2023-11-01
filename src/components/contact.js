@@ -1,5 +1,5 @@
 import React from 'react';
-import ScrollableAnchor from 'react-scrollable-anchor'
+// import ScrollableAnchor from 'react-scrollable-anchor'
 export default class Contact extends React.Component{
 
     
@@ -7,7 +7,7 @@ export default class Contact extends React.Component{
         //the contact form go to the bin/contact_me.php file
     render(){
         return(
-            <ScrollableAnchor id={'contact'} >
+            // <ScrollableAnchor id={'contact'} >
                 <div id='contactUs' className='clearfix'>
 
                     <div id='contactHeader'  >
@@ -65,7 +65,7 @@ export default class Contact extends React.Component{
                         <h3><span className="glyphicon glyphicon-earphone"></span>Call us: <br/>2489838897</h3>
                     </div>
                 </div>
-            </ScrollableAnchor>
+            // </ScrollableAnchor>
         )
     }
 }

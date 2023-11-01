@@ -8,6 +8,9 @@
   outline:none;
 }
 
+.navbar-right{
+  padding-top: 6px;
+}
 
 #navbar{
     margin-bottom: 0px;
@@ -21,10 +24,12 @@
       color: black;
       text-shadow: none;
       height: 60px;
+      cursor: pointer;
+      margin-left
       .logo{
         padding: 0px;
         // height: 60px;
-        // width: 60px;
+        width: 80px;
       }
 
     }

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Jumbotron} from 'react-bootstrap';
 import mill from './images/mill.jpg'
-import ScrollableAnchor from 'react-scrollable-anchor'
+// import ScrollableAnchor from 'react-scrollable-anchor'
 import Ikea from './images/logos/ikeaLogo.jpg'
 import Lexus from  './images/logos/lexusLogo.png'
 import Pepsi from   './images/logos/pepsiLogo.png'        
@@ -14,8 +14,8 @@ export default (props)=>{
     const logos=[kellerW]
 
     return(
-        <ScrollableAnchor id={'ourWork'} >
-            <div >
+        // <ScrollableAnchor id={'ourWork'} >
+            <div id="ourWork" >
                 <Jumbotron id='ourWorkJumbo'  >
                         <div  id='ourWorkJumboText' className=' jumboTextBlack'>
                             { language==='eng' ?
@@ -74,6 +74,6 @@ export default (props)=>{
                     </div>
                     </div>
             </div>
-        </ScrollableAnchor>
+        // </ScrollableAnchor>
     )
 }

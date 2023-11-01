@@ -1,5 +1,5 @@
 import React from 'react';
-import ScrollableAnchor from 'react-scrollable-anchor';
+// import ScrollableAnchor from 'react-scrollable-anchor';
 import {Jumbotron} from 'react-bootstrap';
 
 
@@ -11,8 +11,8 @@ export default (props)=>{
     let language = props.language
     console.log('ourWork props', props)
     return(
-        <ScrollableAnchor id={'services'} >
-            <div >
+        // <ScrollableAnchor id={'services'} >
+            <div id="services">
             <Jumbotron id='servicesJumbo'>
                         <div  id='servicesJumboText' className=' jumboTextBlack'>
                             { language==='eng' ?
@@ -271,6 +271,6 @@ export default (props)=>{
                     </div>
                 </div>
             </div>
-        </ScrollableAnchor>
+        // </ScrollableAnchor>
     )
 }

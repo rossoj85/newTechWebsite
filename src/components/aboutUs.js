@@ -1,7 +1,7 @@
 import React from 'react';
 import {Jumbotron} from 'react-bootstrap';
 import dummyProfile from './images/dummyProfile.jpg';
-import ScrollableAnchor from 'react-scrollable-anchor'
+// import ScrollableAnchor from 'react-scrollable-anchor'
 
 
 export default (props)=>{
@@ -12,7 +12,7 @@ export default (props)=>{
         {name: 'Gregory', title: 'Client Services', education: 'Pace University', education2: 'null'}
     ]
     return(
-        <ScrollableAnchor id={'about'}>
+        // <ScrollableAnchor id={'about'}>
             <div id='aboutUs'>
                 <Jumbotron id='aboutJumbo' >
                     <div  id='aboutUsJumboText' className=' jumboTextBlack'>
@@ -87,6 +87,6 @@ export default (props)=>{
                 </div>
             */}
             </div>
-        </ScrollableAnchor>
+        // </ScrollableAnchor>
     )
 }
